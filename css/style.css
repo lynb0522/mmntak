@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.cell{
+    float: left;
+}
+.cell-r{
+    float: right;
+}
+.row::after{
+    clear:both;
+    content: "";
+    display: block;
+}
+.wrap{
+    position: relative;
+    width: 100%;
+    min-width: 1100px;
+    overflow: hidden;
+}
+.top-bar{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    position: relative;
+}
+
+.top-bar > .top-bar-in{
+    position: relative;
+    width: 1100px;
+    height: 90px;
+    margin: 0 auto;
+    line-height: 90px;
+}
+
+.top-bar >.top-bar-in > .logo-box > a{
+    display: block;
+}
+
+.top-bar >.top-bar-in > .logo-box > a> img{
+    transform: translateY(40%);
+}
+.top-bar >.top-bar-in >.menu-box{
+    height: 90px;
+    padding-left: 25px;
+    position: relative;
+    z-index: 999;
+}
+
+.top-bar >.top-bar-in >.menu-box >ul >li{
+    position: relative;
+}
+.top-bar >.top-bar-in >.menu-box >ul >li >a{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 30px;
+    line-height: 90px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.top-bar >.top-bar-in >.menu-box >ul >li>.depth{
+    display:none;
+}
+
+.top-bar >.top-bar-in >.menu-box >ul:hover>li>.depth{
+    display:block;
+    
+}
+.top-bar >.top-bar-in >.menu-box >ul >li >ul{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    padding: 10px 0;
+    right: 0;
+    
+}
+
+.top-bar >.top-bar-in >.menu-box >ul >li >.depth{
+    width: 100%;
+    background-color: beige;
+
+}
+.top-bar >.top-bar-in >.menu-box >ul >li >.depth>ul>li>a{
+    display: block;
+    padding-left:30px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 35px;
+    
+}
+
+.top-bar >.top-bar-in >.menu-box >ul >li >.depth>ul>li>a:hover{
+    color: red;
+}
+.top-bar>.top-bar-in>.login-box{
+    padding-right: 45px;
+}
+
+.top-bar>.top-bar-in>.login-box>ul>li>a{
+    font-size: 12px;
+    padding-left: 10px;
+    line-height: 20px;
+    
+    color: #777;
+}
+
+.top-bar>.top-bar-in>.login-box>ul>li>a:hover{
+    color: red;
+}
+.top-bar>.top-bar-in>.icon-box{
+    padding-right: 5px;
+}
+
+.top-bar>.top-bar-in>.icon-box > ul >li >a{
+    display: block;
+    padding: 0 5px;;
+}
+
+.contain{
+    width: 100%;     
+    background-color: #777;
+    position: relative;
+}
+.contain>.center-wrap{
+    width: 1100px;
+    margin: 0 auto;
+}
+.contain >.center-wrap> .slick-wrap {
+    margin: 0 -730px; 
+}
+
+.contain >.center-wrap> .slick-wrap>.slick-slider > .slick-dots{
+    bottom: 20px ;
+    z-index: 5 ;
+    left:17.5%;  
+}
+
+.contain >.center-wrap> .slick-wrap>.edu-info{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+}
+
+
+.contain >.center-wrap> .slick-wrap> .btn-wrap{
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    right: 82%;
+    z-index: 10;
+}
+
+.contain >.center-wrap> .slick-wrap> .btn-wrap >.btn-prev{
+    padding-right: 5px;
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap{
+    position: fixed;
+    width: 700px;
+    top:0;
+    right: -800px;
+    background-color: azure;
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap.active{
+   
+    right: 0px;
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu{
+    position: relative;
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu >.close-btn{
+    position: absolute;
+    left: -60px;
+    top:90px;
+    display: block
+
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu > .text-box{
+    padding: 40px 65px 40px;
+    background-color:rgb(188, 196, 211);
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu > .text-box >p{
+    font-size: 30px;
+    line-height: 40px;
+    
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu > .text-box >p >.bold{
+    font-weight: 900;
+}
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu > .text-box >p >.ita{
+    font-style: italic;
+    /* 왜 안기울어질까.. */
+}
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu > .text-box >.standard{
+    font-size: 12px;
+    line-height: 20px;
+    text-align: right;
+    margin-top: 15px;
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu >.serch-wrap{
+    padding: 40px 65px 40px;
+}
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu >.serch-wrap >p{
+    font-size: 30px;
+    line-height: 40px;
+}
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu >.serch-wrap >p >span{
+    font-weight: 900;
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu >.serch-wrap >form>.serch-box{
+    border: 3px solid red;
+    margin-top: 10px;
+    width: 470px;
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu >.serch-wrap >form>.serch-box>.serch{
+    width: 380px;
+    height: 56px;
+    line-height: -20px;
+    font-size: 15px;
+    /* padding: 10px 10px; */
+    
+    border: 0;
+}
+
+.contain >.center-wrap>.slick-wrap>.hide-edu-wrap >.hide-edu >.serch-wrap >form>.serch-box >.btn{
+    background-image: url('./image/cont_srch_btn.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 56px;
+    border: 0;
+}
