@@ -8,8 +8,24 @@ $(document).ready(function(){
     });
   });
 
-$(document).ready(function(){
-  $('.edu-info').click(function(){
-    $('.hide-edu-wrap').addClass("active");
+  $(document).ready(function(){
+
+    $(".edu-info").click(function(){
+      var thisIndex = $(this).index();
+      
+      if( $(".hide-edu-wrap").eq(thisIndex).hasClass("active") ){
+       
+        $(".wrap>.hide-side").removeClass("active");
+        
+      } else {
+        
+        $(".hide-edu-wrap").addClass("active")
+        $(".hide-side").addClass("active")
+      }
+    });
+    
+    $(".hide-side").click(function(){
+      $(".hide-edu-wrap").removeClass("active")
+      $(".hide-side").removeClass("active")
+    })
   });
-});
